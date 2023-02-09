@@ -2,12 +2,12 @@
 
 namespace Shizuco\NovaInlineTextField;
 
-use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class InlineSelect extends Text
+class InlineSelect extends Select
 {
-    public $component = 'inline-text-field';
+    public $component = 'inline-select-field';
 
     protected function resolveAttribute($resource, $attribute)
     {
@@ -21,7 +21,7 @@ class InlineSelect extends Text
 
         /** @var NovaRequest */
         $novaRequest = app()->make(NovaRequest::class);
-        if ($novaRequest->isFormRequest()) $this->component = 'text-field';
+        if ($novaRequest->isFormRequest()) $this->component = 'select-field';
     }
 
     public function maxWidth(int|null $maxWidthPx = null)

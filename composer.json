@@ -15,13 +15,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Shizuco\\NovaInlineTextField\\": "src/"
+      "Shizuco\\NovaInlineSelectField\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Shizuco\\NovaInlineTextField\\FieldServiceProvider"
+        "Shizuco\\NovaInlineSelectField\\FieldServiceProvider"
       ]
     }
   },
