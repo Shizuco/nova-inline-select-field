@@ -47,20 +47,12 @@ export default {
     editing: false,
     loading: false,
     fieldValue: '',
-<<<<<<< HEAD
     fieldOptions: []
-=======
-    options: []
->>>>>>> 25e0e812963bb2ef342669599f5794ca51715ac7
   }),
 
   mounted() {
     this.fieldValue = this.value;
-<<<<<<< HEAD
     this.fieldOptions = this.options;
-=======
-    this.options = this.field.options;
->>>>>>> 25e0e812963bb2ef342669599f5794ca51715ac7
   },
 
   methods: {
