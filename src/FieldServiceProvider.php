@@ -1,12 +1,12 @@
 <?php
 
-namespace Outl1ne\NovaInlineTextField;
+namespace Shizuco\NovaInlineTextField;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Events\ServingNova;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Outl1ne\NovaInlineTextField\Http\Controllers\NovaInlineTextFieldController;
+use Shizuco\NovaInlineTextField\Http\Controllers\NovaInlineTextFieldController;
 
 class FieldServiceProvider extends ServiceProvider
 {

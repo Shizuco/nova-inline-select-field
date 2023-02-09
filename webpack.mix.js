@@ -12,7 +12,7 @@ mix
       vue: 'Vue',
     },
     output: {
-      uniqueName: 'outl1ne/nova-inline-text-field',
+      uniqueName: 'shizuco/nova-inline-text-field',
     },
   })
   .postCss('resources/css/entry.css', 'dist/css/', [postcss(), tailwindcss('tailwind.config.js')])

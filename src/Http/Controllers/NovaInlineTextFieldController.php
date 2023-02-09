@@ -1,10 +1,10 @@
 <?php
 
-namespace Outl1ne\NovaInlineTextField\Http\Controllers;
+namespace Shizuco\NovaInlineTextField\Http\Controllers;
 
 use Exception;
 use Illuminate\Routing\Controller;
-use Outl1ne\NovaInlineTextField\InlineText;
+use Shizuco\NovaInlineTextField\InlineText;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class NovaInlineTextFieldController extends Controller
