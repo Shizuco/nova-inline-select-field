@@ -7,7 +7,7 @@ use Illuminate\Routing\Controller;
 use Shizuco\NovaInlineSelectField\InlineSelect;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class NovaInlineTextFieldController extends Controller
+class NovaInlineSelectFieldController extends Controller
 {
     public function update(NovaRequest $request)
     {
