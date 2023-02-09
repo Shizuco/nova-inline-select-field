@@ -49,10 +49,12 @@ export default {
     editing: false,
     loading: false,
     fieldValue: '',
+    options: []
   }),
 
   mounted() {
     this.fieldValue = this.value;
+    this.options = this.field.options;
   },
 
   methods: {
