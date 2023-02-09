@@ -13,20 +13,20 @@
     </template>
 
     <template v-else>
-      <SelectControl
-                v-model:selected="fieldValue"
-                :options="options"
+      <select 
+                v-model="fieldValue"
                 ref="input"
         @keypress="onInputKeyPress"
-        type="text"
         :disabled="loading"
         class="form-control form-input form-input-bordered o1-w-full"
         @click.stop.capture="true"
             >
-                <option value="" selected :disabled="! field.nullable">
-                    Choose
-                </option>
-            </SelectControl>
+            <option v-for="item in options"
+                    value="@{{item.list}}"
+                    selected="item.list=={{json_encode($ads->fieldValue)}}?true : false">
+                @{{item.list}}
+            </option>
+            </select>
 
       <ConfirmIcon @click.stop.capture="!loading ? updateFieldValue() : void 0" />
       <CancelIcon @click.stop.capture="cancelEditing" />
