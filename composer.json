@@ -1,5 +1,5 @@
 {
-  "name": "shizuco/nova-select-inline-field",
+  "name": "shizuco/nova-inline-select-field",
   "description": "A Laravel Nova inline text field.",
   "keywords": [
     "laravel",
