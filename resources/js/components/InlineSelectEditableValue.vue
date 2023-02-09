@@ -36,7 +36,7 @@
 import EditIcon from '../icons/EditIcon';
 import CancelIcon from '../icons/CancelIcon';
 import ConfirmIcon from '../icons/ConfirmIcon';
-import InteractsWithResourceInformation from '../../../laravel/nova/resources/js/mixins/InteractsWithResourceInformation';
+import InteractsWithResourceInformation from 'nova/mixins/InteractsWithResourceInformation';
 
 export default {
   props: ['resourceName', 'field'],

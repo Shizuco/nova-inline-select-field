@@ -1,5 +1,5 @@
 let path = require('path');
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 let postcss = require('postcss-import');
 let tailwindcss = require('tailwindcss');
 
