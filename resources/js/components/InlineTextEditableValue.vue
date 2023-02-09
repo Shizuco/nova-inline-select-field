@@ -21,9 +21,8 @@
         class="form-control form-input form-input-bordered o1-w-full"
         @click.stop.capture="true"
             >
-            <option v-for="item in options">
-                Start select
-            </option>
+            <option>A</option>
+            <option>B</option>
             </select>
 
       <ConfirmIcon @click.stop.capture="!loading ? updateFieldValue() : void 0" />
