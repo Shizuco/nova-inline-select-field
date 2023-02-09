@@ -1,6 +1,6 @@
 <?php
 
-namespace Shizuco\NovaInlineTextField;
+namespace Shizuco\NovaInlineSelectField;
 
 use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Http\Requests\NovaRequest;
