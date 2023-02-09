@@ -15,7 +15,6 @@
     <template v-else>
       <select 
                 v-model="fieldValue"
-                data-a = "b"
                 ref="select"
         @keypress="onInputKeyPress"
         :disabled="loading"
@@ -36,7 +35,7 @@
 import EditIcon from '../icons/EditIcon';
 import CancelIcon from '../icons/CancelIcon';
 import ConfirmIcon from '../icons/ConfirmIcon';
-import InteractsWithResourceInformation from '../../laravel/nova/resources/js/mixins/InteractsWithResourceInformation';
+import InteractsWithResourceInformation from '../../../laravel/nova/resources/js/mixins/InteractsWithResourceInformation';
 
 export default {
   props: ['resourceName', 'field'],
