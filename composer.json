@@ -1,5 +1,5 @@
 {
-  "name": "outl1ne/nova-inline-text-field",
+  "name": "shizuco/nova-select-inline-field",
   "description": "A Laravel Nova inline text field.",
   "keywords": [
     "laravel",
@@ -15,13 +15,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Outl1ne\\NovaInlineTextField\\": "src/"
+      "Shizuco\\NovaInlineTextField\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Outl1ne\\NovaInlineTextField\\FieldServiceProvider"
+        "Shizuco\\NovaInlineTextField\\FieldServiceProvider"
       ]
     }
   },

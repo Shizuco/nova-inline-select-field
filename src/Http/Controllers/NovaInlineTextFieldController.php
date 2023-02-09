@@ -29,7 +29,7 @@ class NovaInlineTextFieldController extends Controller
 
             $allFields = collect($resource->fields($request));
             $field = $allFields->first(function ($field) use ($attribute) {
-                return get_class($field) === InlineText::class && $field->attribute === $attribute;
+                return get_class($field) === InlineSelect::class && $field->attribute === $attribute;
             });
 
             $field->fillInto($request, $model, $attribute);

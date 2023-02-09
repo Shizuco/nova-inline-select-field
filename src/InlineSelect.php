@@ -5,7 +5,7 @@ namespace Outl1ne\NovaInlineTextField;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class InlineText extends Text
+class InlineSelect extends Text
 {
     public $component = 'inline-text-field';
 
