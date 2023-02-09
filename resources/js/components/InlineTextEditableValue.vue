@@ -21,10 +21,8 @@
         class="form-control form-input form-input-bordered o1-w-full"
         @click.stop.capture="true"
             >
-            <option v-for="item in options"
-                    value="@{{item.list}}"
-                    selected="item.list=={{json_encode($ads->fieldValue)}}?true : false">
-                @{{item.list}}
+            <option v-for="item in options">
+                Start select
             </option>
             </select>
 
@@ -49,10 +47,12 @@ export default {
     editing: false,
     loading: false,
     fieldValue: '',
+    fieldOptions: []
   }),
 
   mounted() {
     this.fieldValue = this.value;
+    this.fieldOptions = this.options;
   },
 
   methods: {
