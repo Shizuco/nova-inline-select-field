@@ -38,7 +38,7 @@
 import EditIcon from '../icons/EditIcon';
 import CancelIcon from '../icons/CancelIcon';
 import ConfirmIcon from '../icons/ConfirmIcon';
-import InteractsWithResourceInformation from 'nova/mixins/InteractsWithResourceInformation';
+import InteractsWithResourceInformation from 'nova/resources/js/mixins/InteractsWithResourceInformation';
 
 export default {
   props: ['resourceName', 'field'],
