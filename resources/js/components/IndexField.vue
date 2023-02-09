@@ -1,12 +1,12 @@
 <template>
-  <InlineTextEditableValue :field="field" :resourceName="resourceName" />
+  <InlineSelectEditableValue :field="field" :resourceName="resourceName" />
 </template>
 
 <script>
-import InlineTextEditableValue from './InlineTextEditableValue';
+import InlineSelectEditableValue from './InlineSelectEditableValue';
 
 export default {
-  components: { InlineTextEditableValue },
+  components: { InlineSelectEditableValue },
   props: ['resourceName', 'field'],
 };
 </script>

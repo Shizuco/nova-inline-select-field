@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="`nova-inline-text-field-index text-${field.textAlign}${editing ? ' -editing' : ''} w-full`"
+    :class="`nova-inline-select-field-index text-${field.textAlign}${editing ? ' -editing' : ''} w-full`"
     @click.stop="e => !e.target.classList.contains('inline-icon')"
     @dblclick.stop.capture="startEditing"
   >
@@ -76,7 +76,7 @@ export default {
     async updateFieldValue() {
       this.loading = true;
       try {
-        await Nova.request().post(`/nova-vendor/nova-inline-text-field/update/${this.resourceName}`, {
+        await Nova.request().post(`/nova-vendor/nova-inline-select-field/update/${this.resourceName}`, {
           _inlineResourceId: this.field.resourceId,
           _inlineAttribute: this.field.attribute,
           [this.field.attribute]: this.fieldValue,
@@ -116,7 +116,7 @@ export default {
 </script>
 
 <style lang="scss">
-.nova-inline-text-field-index {
+.nova-inline-select-field-index {
   position: relative;
   display: flex;
   align-items: center;

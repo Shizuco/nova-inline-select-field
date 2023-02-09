@@ -1,16 +1,16 @@
 <template>
   <PanelItem :field="field">
     <template #value>
-      <InlineTextEditableValue :field="field" :resourceName="resourceName" />
+      <InlineSelectEditableValue :field="field" :resourceName="resourceName" />
     </template>
   </PanelItem>
 </template>
 
 <script>
-import InlineTextEditableValue from './InlineTextEditableValue';
+import InlineSelectEditableValue from './InlineSelectEditableValue';
 
 export default {
-  components: { InlineTextEditableValue },
+  components: { InlineSelectEditableValue },
   props: ['resource', 'resourceName', 'resourceId', 'field'],
 };
 </script>
