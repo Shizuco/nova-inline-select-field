@@ -13,15 +13,20 @@
     </template>
 
     <template v-else>
-      <input
-        ref="input"
-        v-model="fieldValue"
+      <SelectControl
+                v-model:selected="fieldValue"
+                :options="options"
+                ref="input"
         @keypress="onInputKeyPress"
         type="text"
         :disabled="loading"
         class="form-control form-input form-input-bordered o1-w-full"
         @click.stop.capture="true"
-      />
+            >
+                <option value="" selected :disabled="! field.nullable">
+                    Choose
+                </option>
+            </SelectControl>
 
       <ConfirmIcon @click.stop.capture="!loading ? updateFieldValue() : void 0" />
       <CancelIcon @click.stop.capture="cancelEditing" />
