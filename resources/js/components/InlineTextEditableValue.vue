@@ -15,6 +15,7 @@
     <template v-else>
       <select 
                 v-model="fieldValue"
+                data-a = "b"
                 ref="select"
         @keypress="onInputKeyPress"
         :disabled="loading"
